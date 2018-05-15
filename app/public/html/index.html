@@ -4,7 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>欢迎来到呦嘿</title>
+  <title>欢迎来到mysite</title>
+  <script type="text/javascript">
+  var system ={};
+  function IsPC() {
+var userAgentInfo = navigator.userAgent;
+var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+var flag = true;
+for (var v = 0; v < Agents.length; v++) {
+    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+        flag = false;
+        break;
+    }
+}
+return flag;
+}
+var flag = IsPC();
+if(flag){
+  console.log(1);
+}else {
+  console.log(2);
+}
+  </script>
   <link rel="stylesheet" href="/css/index.min.css">
 </head>
 <body>
