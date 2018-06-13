@@ -13,8 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "ajv": "^6.5.1",
+    "ajv-keywords": "^3.2.0",
     "nuxt": "^1.0.0",
-    "sass-loader": "^7.0.3"
+    "sass-loader": "^7.0.3",
+    "update": "^0.7.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
